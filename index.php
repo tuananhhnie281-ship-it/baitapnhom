@@ -1,11 +1,10 @@
 <?php
-	if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
-		$uri = 'https://';
-	} else {
-		$uri = 'http://';
-	}
-	$uri .= $_SERVER['HTTP_HOST'];
-	header('Location: '.$uri.'/dashboard/');
-	exit;
+
+$name = "Tuấn Anh";
+$subject = "PHP";
+
+echo "<h1>Xin chào GitHub!</h1>";
+echo "<p>Tôi là $name.</p>";
+echo "<p>Tôi đang học $subject.</p>";
+
 ?>
-Something is wrong with the XAMPP installation :-(
